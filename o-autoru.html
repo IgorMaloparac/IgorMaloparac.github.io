@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset ="UTF-8">
+        <title>Kuvar</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" type="image/x-icon" href="images\favicon.ico">
+		<link rel="preload" href="images/titlebanner.jpg" as="image">
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body>
+		<header>
+			<div class="banner">
+				<nav class="navigacija">
+					<ul>
+						<li id="first"><a href="index.html">POČETNA</a></li>
+						<li><a href="recepti.html">RECEPTI</a></li>
+						<li><a href="prijava.html#registraciona-forma">PRIJAVA</a></li>
+						<li><a href="o-autoru.html" style="background-color: white;color: black">O AUTORU</a></li>
+					</ul>
+				</nav>
+				<h1>Kuvar</h1>
+			</div>
+		<header>
+		<main>
+			<div id="opis-autora">
+				<div id="indeks-slika">
+					<img src="images/autor.jpg" width="259px" height="400px">
+					<p>Igor Maloparac, 32/22</p>
+				</div>
+				<p id="biografija">Igor Maloparac je rođen 3. marta 2001. godine. Dolazi iz Gornje Dobrinje, i student je na Visokoj ICT Školi. Završio je računarski smer Gimnazije "Sveti Sava" u Požegi.</p>
+			</div>
+			<div class="prijava-link">
+					<a href="prijava.html#registraciona-forma"><button id="prijava">Registruj se</button></a>
+			</div>
+		</main>
+		<footer>
+			<nav class="footer-navigacija">
+				<ul>
+					<li><a href="index.html">POČETNA</a></li>
+					<li><a href="recepti.html">RECEPTI</a></li>
+					<li><a href="prijava.html#registraciona-forma">PRIJAVA</a></li>
+					<li><a href="o-autoru.html" >O AUTORU</a></li>
+				</ul>
+			</nav>
+			<div id="link-sajta-skole">
+				<img src="images/ictlogo.png">
+				<a href="https://www.ict.edu.rs/" id="link-skole" target="_blank">Odsek Visoka škola za informacione i komunikacione tehnologije</a>
+			</div>
+			<div>
+				<a href="sitemap.html" id="sitemap-link">SITEMAP</a>
+			</div>
+		</footer>
+		<script>
+        window.addEventListener("load", function() {
+            if (window.location.hash) {
+                window.scrollTo(0, 0);
+                history.pushState("", document.title, window.location.pathname);
+            }
+        });
+		</script>
+    </body>
+</html>

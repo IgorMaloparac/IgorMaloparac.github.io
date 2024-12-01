@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset ="UTF-8">
+        <title>Kuvar</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" type="image/x-icon" href="images\favicon.ico">
+		<link rel="preload" href="images/titlebanner.jpg" as="image">
+		<link href='https://fonts.googleapis.com/css?family=Sour+Gummy' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+
+    <body>
+		<header>
+			<div class="banner">
+				<nav class="navigacija">
+					<ul>
+						<li><a href="index.html" style="background-color: white;color: black">POČETNA</a></li>
+						<li><a href="recepti.html#detail">RECEPTI</a></li>
+						<li><a href="prijava.html#registraciona-forma">PRIJAVA</a></li>
+						<li><a href="o-autoru.html" >O AUTORU</a></li>
+					</ul>
+				</nav>
+				<h1>Kuvar</h1>
+			</div>
+		<header>
+		<main>
+			<div id="opis-sajta">
+				<p id="opis-levo">"Kuvar" je sajt namenjen razmeni recepata raznih kuhinja.</p><br>
+				<p id="opis-desno">"Kuvar" nudi broj svojih izabranih recepata za najbolje kućne obroke, ali takođe i Vaše recepte! <a href="prijava.html#registraciona-forma" id="link-za-prijavu">Prijavite se danas</a> i podelite sa ostalim korisnicima jela koja svakodnevno krase Vašu trpezu!</p>
+			</div>
+			<div class="prijava-link">
+					<a href="prijava.html#registraciona-forma"><button id="prijava">Registruj se</button></a>
+			</div>
+		</main>
+		<footer>
+			<nav class="footer-navigacija">
+				<ul>
+					<li><a href="index.html">POČETNA</a></li>
+					<li><a href="recepti.html">RECEPTI</a></li>
+					<li><a href="prijava.html#registraciona-forma">PRIJAVA</a></li>
+					<li><a href="o-autoru.html" >O AUTORU</a></li>
+				</ul>
+			</nav>
+			<div id="link-sajta-skole">
+				<img src="images/ictlogo.png">
+				<a href="https://www.ict.edu.rs/" id="link-skole" target="_blank">Odsek Visoka škola za informacione i komunikacione tehnologije</a>
+			</div>
+			<div>
+				<a href="sitemap.html" id="sitemap-link">SITEMAP</a>
+			</div>
+		</footer>
+		<script>
+        window.addEventListener("load", function() {
+            if (window.location.hash) {
+                window.scrollTo(0, 0);
+                history.pushState("", document.title, window.location.pathname);
+            }
+        });
+		</script>
+    </body>
+</html>
